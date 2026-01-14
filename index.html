@@ -17,7 +17,15 @@
         <header>
             <div class="header-content">
                 <div class="profile-container">
-                    <img src="assets/img/profile_large.jpg" alt="Thibault Wagret" class="profile-img">
+                    <picture>
+                        <source srcset="assets/img/profile.webp" type="image/webp">
+                        <img src="assets/img/profile_opt.jpg" 
+                             alt="Thibault Wagret" 
+                             class="profile-img" 
+                             width="800" 
+                             height="553"
+                             fetchpriority="high">
+                    </picture>
                 </div>
                 <div class="header-text">
                     <h1>Thibault Wagret</h1>
