@@ -1,0 +1,22 @@
+.DS_Store
+__pycache__/
+*.pyc
+
+# Fichiers de travail privés : ne jamais publier avec GitHub Pages
+/.htaccess
+/RDD3 Thibault  - Feuille 1.csv
+/Screenshot_2025-12-14-23-52-31-91_6012fa4d4ddec268fc5c7112cbb265e7.jpg
+/Thibault-3 Kopie 5.jpg
+/analyze_rdd3.py
+/cluster_pca.png
+/correlation_matrix_sig.png
+/cv.txt
+/optimize_images.py
+/significant_lifts.png
+/top_correlations.png
+
+# Sources photo non optimisées
+/assets/img/profile.jpg
+/assets/img/profile.webp
+/assets/img/profile_large.jpg
+/assets/img/profile_opt.jpg

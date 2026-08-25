@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>THIVLVC : analyse syntaxique du latin par RAG | Thibault Wagret</title>
+    <meta name="description" content="Résumé de THIVLVC, système RAG d’analyse syntaxique du latin présenté à EvaLatin 2026 : méthode, résultats sur Sénèque et Thomas d’Aquin, citation et DOI.">
+    <meta name="author" content="Thibault Wagret">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="theme-color" content="#172433">
+    <link rel="canonical" href="https://thibaultwagret.fr/publication-thivlvc.html">
+    <link rel="author" href="https://thibaultwagret.fr/">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Thibault Wagret">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:url" content="https://thibaultwagret.fr/publication-thivlvc.html">
+    <meta property="og:title" content="THIVLVC : analyse syntaxique du latin par RAG">
+    <meta property="og:description" content="Méthode, résultats et références de la publication présentée à EvaLatin 2026 par Luc Pommeret, Thibault Wagret et Jules Deret.">
+    <meta property="og:image" content="https://thibaultwagret.fr/assets/img/og-thivlvc.png">
+    <meta property="og:image:secure_url" content="https://thibaultwagret.fr/assets/img/og-thivlvc.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="THIVLVC, publication sur l’analyse syntaxique du latin par RAG">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="THIVLVC : analyse syntaxique du latin par RAG">
+    <meta name="twitter:description" content="Méthode, résultats et références de la publication présentée à EvaLatin 2026.">
+    <meta name="twitter:image" content="https://thibaultwagret.fr/assets/img/og-thivlvc.png">
+    <meta name="twitter:image:alt" content="THIVLVC, publication sur l’analyse syntaxique du latin par RAG">
+
+    <meta name="citation_title" content="THIVLVC: Retrieval Augmented Dependency Parsing for Latin">
+    <meta name="citation_author" content="Luc Pommeret">
+    <meta name="citation_author" content="Thibault Wagret">
+    <meta name="citation_author" content="Jules Deret">
+    <meta name="citation_publication_date" content="2026/05">
+    <meta name="citation_conference_title" content="Proceedings of the Fourth Workshop on Language Technologies for Historical and Ancient Languages (LT4HALA 2026) @ LREC 2026">
+    <meta name="citation_firstpage" content="219">
+    <meta name="citation_lastpage" content="225">
+    <meta name="citation_doi" content="10.63317/2q8twojtotyb">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://thibaultwagret.fr/#website",
+          "url": "https://thibaultwagret.fr/",
+          "name": "Thibault Wagret",
+          "inLanguage": "fr-FR",
+          "publisher": { "@id": "https://thibaultwagret.fr/#person" }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://thibaultwagret.fr/#person",
+          "name": "Thibault Wagret",
+          "url": "https://thibaultwagret.fr/",
+          "sameAs": [
+            "https://www.hisoma.mom.fr/presentation/annuaire-du-personnel/wagret-thibault",
+            "https://aclanthology.org/people/thibault-wagret/unverified/"
+          ]
+        },
+        {
+          "@type": "ImageObject",
+          "@id": "https://thibaultwagret.fr/publication-thivlvc.html#primaryimage",
+          "url": "https://thibaultwagret.fr/assets/img/og-thivlvc.png",
+          "width": 1200,
+          "height": 630,
+          "caption": "THIVLVC: Retrieval Augmented Dependency Parsing for Latin"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://thibaultwagret.fr/publication-thivlvc.html#webpage",
+          "url": "https://thibaultwagret.fr/publication-thivlvc.html",
+          "name": "THIVLVC : analyse syntaxique du latin par RAG",
+          "description": "Résumé en français, méthode, résultats et références de la publication THIVLVC.",
+          "inLanguage": "fr-FR",
+          "dateCreated": "2026-08-25",
+          "dateModified": "2026-08-25",
+          "isPartOf": { "@id": "https://thibaultwagret.fr/#website" },
+          "breadcrumb": { "@id": "https://thibaultwagret.fr/publication-thivlvc.html#breadcrumb" },
+          "primaryImageOfPage": { "@id": "https://thibaultwagret.fr/publication-thivlvc.html#primaryimage" },
+          "mainEntity": { "@id": "https://doi.org/10.63317/2q8twojtotyb" }
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://doi.org/10.63317/2q8twojtotyb",
+          "headline": "THIVLVC: Retrieval Augmented Dependency Parsing for Latin",
+          "name": "THIVLVC: Retrieval Augmented Dependency Parsing for Latin",
+          "url": "https://thibaultwagret.fr/publication-thivlvc.html",
+          "sameAs": [
+            "https://aclanthology.org/2026.lt4hala-1.20/",
+            "https://doi.org/10.63317/2q8twojtotyb"
+          ],
+          "mainEntityOfPage": { "@id": "https://thibaultwagret.fr/publication-thivlvc.html#webpage" },
+          "image": { "@id": "https://thibaultwagret.fr/publication-thivlvc.html#primaryimage" },
+          "datePublished": "2026-05",
+          "inLanguage": "en",
+          "pageStart": "219",
+          "pageEnd": "225",
+          "pagination": "219–225",
+          "identifier": ["ACL:2026.lt4hala-1.20", "DOI:10.63317/2q8twojtotyb"],
+          "description": "Synthèse en français : THIVLVC est un système en deux étapes pour l’analyse syntaxique du latin. Il associe une analyse UDPipe, la recherche d’exemples structurellement proches dans le treebank CIRCSE et un grand modèle de langue guidé par les conventions Universal Dependencies.",
+          "keywords": ["Latin", "dependency parsing", "Retrieval-Augmented Generation", "RAG", "Universal Dependencies", "EvaLatin"],
+          "about": ["Traitement automatique du latin", "Analyse syntaxique", "Modèles de langue", "Humanités numériques"],
+          "author": [
+            { "@type": "Person", "name": "Luc Pommeret", "url": "https://lucpommeret.com/" },
+            { "@id": "https://thibaultwagret.fr/#person" },
+            { "@type": "Person", "name": "Jules Deret", "url": "https://julesderet.fr/" }
+          ],
+          "publisher": {
+            "@type": "Organization",
+            "name": "ELRA Language Resources Association",
+            "url": "https://www.elra.info/"
+          },
+          "isPartOf": {
+            "@type": "CreativeWork",
+            "name": "Proceedings of the Fourth Workshop on Language Technologies for Historical and Ancient Languages (LT4HALA 2026) @ LREC 2026"
+          },
+          "license": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://thibaultwagret.fr/publication-thivlvc.html#breadcrumb",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://thibaultwagret.fr/" },
+            { "@type": "ListItem", "position": 2, "name": "Recherche", "item": "https://thibaultwagret.fr/#research" },
+            { "@type": "ListItem", "position": 3, "name": "THIVLVC", "item": "https://thibaultwagret.fr/publication-thivlvc.html" }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#contenu-principal">Aller au contenu</a>
+
+    <header class="site-hero article-hero">
+        <div class="page-shell hero-grid">
+            <div>
+                <nav class="breadcrumb" aria-label="Fil d’Ariane"><a href="/">Accueil</a><span aria-hidden="true">/</span><a href="/#research">Recherche</a><span aria-hidden="true">/</span><span aria-current="page">THIVLVC</span></nav>
+                <p class="eyebrow">Publication · LT4HALA / LREC 2026</p>
+                <h1>THIVLVC</h1>
+                <p class="hero-lead"><cite>Retrieval Augmented Dependency Parsing for Latin</cite></p>
+                <p class="hero-affiliation citation_author"><a href="https://lucpommeret.com/" target="_blank" rel="noopener noreferrer">Luc Pommeret</a>, <a href="/">Thibault Wagret</a> et <a href="https://julesderet.fr/" target="_blank" rel="noopener noreferrer">Jules Deret</a>.</p>
+                <div class="hero-actions">
+                    <a class="btn" href="https://aclanthology.org/2026.lt4hala-1.20/" target="_blank" rel="noopener noreferrer">Notice ACL Anthology</a>
+                    <a class="btn btn-outline" href="https://doi.org/10.63317/2q8twojtotyb" target="_blank" rel="noopener noreferrer">DOI</a>
+                </div>
+            </div>
+        </div>
+        <ul class="credential-strip" aria-label="Référence bibliographique">
+            <li class="credential"><a href="#citation"><strong>Mai 2026</strong><span>Date de publication</span></a></li>
+            <li class="credential"><a href="#citation"><strong>LT4HALA</strong><span>Atelier de LREC 2026</span></a></li>
+            <li class="credential"><a href="#citation"><strong>Pages 219–225</strong><span>Actes de la conférence</span></a></li>
+            <li class="credential"><a href="#resultats"><strong>EvaLatin 2026</strong><span>Tâche d’analyse syntaxique</span></a></li>
+        </ul>
+    </header>
+
+    <nav class="site-nav" aria-label="Navigation de la publication">
+        <ul>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="#resume" aria-current="page">Résumé</a></li>
+            <li><a href="#methode">Méthode</a></li>
+            <li><a href="#resultats">Résultats</a></li>
+            <li><a href="#citation">Citation</a></li>
+            <li><a href="#sources">Sources</a></li>
+        </ul>
+    </nav>
+
+    <main id="contenu-principal" class="page-shell">
+        <article>
+            <section id="resume" class="content-section">
+                <div class="section-heading">
+                    <span class="section-number">Synthèse</span>
+                    <div><h2>Analyser automatiquement la syntaxe du latin</h2><p>THIVLVC est un système en deux étapes conçu pour la tâche d’analyse syntaxique d’EvaLatin 2026.</p></div>
+                </div>
+                <div class="about-grid">
+                    <div class="prose">
+                        <p>Le système part d’une analyse produite par UDPipe, recherche dans le treebank CIRCSE des phrases latines structurellement proches, puis demande à un grand modèle de langue de réviser l’analyse à partir de ces exemples et des conventions Universal Dependencies.</p>
+                        <p>Deux configurations ont été évaluées : une version sans recherche documentaire et une version utilisant la génération augmentée par récupération, ou RAG. Le travail porte à la fois sur un corpus poétique de Sénèque et un corpus de prose de Thomas d’Aquin.</p>
+                        <p class="source-note">Synthèse établie à partir de la <a href="https://aclanthology.org/2026.lt4hala-1.20/" target="_blank" rel="noopener noreferrer">notice et de l’article publiés dans ACL Anthology</a>.</p>
+                    </div>
+                    <aside class="fact-card" aria-label="Informations bibliographiques">
+                        <dl>
+                            <div><dt>Auteurs</dt><dd>Pommeret · Wagret · Deret</dd></div>
+                            <div><dt>Événement</dt><dd>LT4HALA / LREC 2026</dd></div>
+                            <div><dt>Éditeur</dt><dd>ELRA Language Resources Association</dd></div>
+                            <div><dt>Identifiant</dt><dd>ACL 2026.lt4hala-1.20</dd></div>
+                        </dl>
+                    </aside>
+                </div>
+            </section>
+
+            <section id="methode" class="content-section">
+                <div class="section-heading">
+                    <span class="section-number">Méthode</span>
+                    <div><h2>Une analyse en trois opérations</h2><p>Le dispositif combine un analyseur établi, une recherche structurale et une révision guidée par les conventions d’annotation.</p></div>
+                </div>
+                <ol class="method-grid numbered-grid">
+                    <li class="method-card"><span class="card-meta">Étape 1</span><h3>Analyse initiale</h3><p>UDPipe fournit une première analyse en dépendances pour chaque phrase latine.</p></li>
+                    <li class="method-card"><span class="card-meta">Étape 2</span><h3>Exemples proches</h3><p>Le système interroge CIRCSE selon la longueur des phrases et la similarité des n-grammes de parties du discours.</p></li>
+                    <li class="method-card"><span class="card-meta">Étape 3</span><h3>Révision par LLM</h3><p>Un grand modèle de langue affine l’analyse grâce aux exemples retrouvés et aux règles Universal Dependencies.</p></li>
+                </ol>
+            </section>
+
+            <section id="resultats" class="content-section">
+                <div class="section-heading">
+                    <span class="section-number">Évaluation</span>
+                    <div><h2>Résultats rapportés</h2><p>Les résultats diffèrent selon le genre du corpus et la métrique d’évaluation ; ils sont donc présentés sans classement global simplificateur.</p></div>
+                </div>
+                <table class="results-table">
+                    <thead><tr><th scope="col">Mesure</th><th scope="col">Corpus</th><th scope="col">Résultat rapporté</th></tr></thead>
+                    <tbody>
+                        <tr><td><strong>+17</strong> points CLAS</td><td>Poésie · Sénèque</td><td>Gain par rapport à la baseline UDPipe.</td></tr>
+                        <tr><td><strong>+1,5</strong> point CLAS</td><td>Prose · Thomas d’Aquin</td><td>Gain par rapport à la baseline UDPipe.</td></tr>
+                        <tr><td><strong>53,3 %</strong></td><td>300 divergences analysées en aveugle</td><td>Part des décisions unanimes favorisant THIVLVC.</td></tr>
+                    </tbody>
+                </table>
+                <div class="evidence-panel">
+                    <h3>Classements de la tâche partagée</h3>
+                    <p>Selon l’article d’évaluation des organisateurs, la configuration THIVLVC avec RAG arrive en tête sur le corpus poétique pour les quatre classements publiés : CLAS et LAS, avec ou sans sous-types. Sur le corpus de prose, elle obtient le meilleur LAS sans sous-types avec un score F1 de 87,93 ; les autres classements de prose sont menés par UppsalaNLP.</p>
+                    <p><a href="https://aclanthology.org/2026.lt4hala-1.19/" target="_blank" rel="noopener noreferrer">Consulter l’article d’évaluation officiel d’EvaLatin 2026</a>.</p>
+                </div>
+            </section>
+
+            <section id="citation" class="content-section">
+                <div class="section-heading">
+                    <span class="section-number">Référence</span>
+                    <div><h2>Citer la publication</h2><p>Référence bibliographique fournie par ACL Anthology.</p></div>
+                </div>
+                <blockquote class="citation-block">
+                    Luc Pommeret, Thibault Wagret et Jules Deret. 2026. « THIVLVC: Retrieval Augmented Dependency Parsing for Latin ». Dans <cite>Proceedings of the Fourth Workshop on Language Technologies for Historical and Ancient Languages (LT4HALA 2026) @ LREC 2026</cite>, p. 219–225. Palma de Majorque : ELRA Language Resources Association.
+                </blockquote>
+                <div class="hero-actions citation-actions">
+                    <a class="btn" href="https://aclanthology.org/2026.lt4hala-1.20/" target="_blank" rel="noopener noreferrer">Notice, PDF et BibTeX</a>
+                    <a class="btn btn-outline" href="https://doi.org/10.63317/2q8twojtotyb" target="_blank" rel="noopener noreferrer">10.63317/2q8twojtotyb</a>
+                </div>
+            </section>
+
+            <section id="sources" class="content-section">
+                <div class="section-heading">
+                    <span class="section-number">Sources</span>
+                    <div><h2>Sources primaires</h2><p>Les faits, chiffres et métadonnées de cette page sont reliés aux publications scientifiques qui les établissent.</p></div>
+                </div>
+                <ul class="source-list">
+                    <li><a href="https://aclanthology.org/2026.lt4hala-1.20/" target="_blank" rel="noopener noreferrer"><strong>Article THIVLVC</strong><span>Résumé, métadonnées, PDF et formats de citation.</span></a></li>
+                    <li><a href="https://doi.org/10.63317/2q8twojtotyb" target="_blank" rel="noopener noreferrer"><strong>DOI de THIVLVC</strong><span>Identifiant pérenne de la publication.</span></a></li>
+                    <li><a href="https://aclanthology.org/2026.lt4hala-1.19/" target="_blank" rel="noopener noreferrer"><strong>Overview of the Dependency Parsing Task</strong><span>Méthodologie d’évaluation et classements officiels d’EvaLatin 2026.</span></a></li>
+                </ul>
+            </section>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="page-shell footer-grid">
+            <div><p>© 2026 Thibault Wagret · Mis à jour le <time datetime="2026-08-25">25 août 2026</time></p><p>Résumé fondé sur les publications ACL Anthology citées dans la page.</p></div>
+            <nav class="footer-links" aria-label="Liens de pied de page"><a href="/">Accueil</a><a href="cours.html">Cours</a><a href="#citation">Citation</a><a href="#sources">Sources</a></nav>
+        </div>
+    </footer>
+</body>
+</html>

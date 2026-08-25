@@ -8,6 +8,11 @@ Thibault Wagret travaille sur la didactique du grec ancien, l’histoire de l’
 
 - [Profil, recherche et enseignement](https://thibaultwagret.fr/)
 - [Cours de grec ancien, latin, philosophie et lettres](https://thibaultwagret.fr/cours.html)
+- [Publication THIVLVC : résumé, méthode, résultats et citation](https://thibaultwagret.fr/publication-thivlvc.html)
+
+## Publication principale
+
+THIVLVC: Retrieval Augmented Dependency Parsing for Latin, par Luc Pommeret, Thibault Wagret et Jules Deret, a paru en mai 2026 dans les actes de LT4HALA à LREC 2026, pages 219–225. Le système associe une analyse UDPipe, une recherche d’exemples structurellement proches dans CIRCSE et une révision guidée par les conventions Universal Dependencies. Il obtient le meilleur résultat sur le corpus poétique dans les quatre classements officiels d’EvaLatin 2026 et le meilleur LAS sans sous-types sur le corpus de prose.
 
 ## Références institutionnelles et scientifiques
 
@@ -15,14 +20,18 @@ Thibault Wagret travaille sur la didactique du grec ancien, l’histoire de l’
 - [Profil ACL Anthology](https://aclanthology.org/people/thibault-wagret/unverified/)
 - [THIVLVC: Retrieval Augmented Dependency Parsing for Latin](https://aclanthology.org/2026.lt4hala-1.20/)
 - [DOI de la publication THIVLVC](https://doi.org/10.63317/2q8twojtotyb)
+- [Évaluation et classements officiels d’EvaLatin 2026](https://aclanthology.org/2026.lt4hala-1.19/)
 
-## Sites associés
+## Ressources externes
 
 - [Grec vivant](https://grecvivant.fr/)
 - [Latin vivant](https://latinvivant.fr/)
 - [Duae Linguae](https://duaelinguae.com/)
-- [Luc Pommeret](https://lucpommeret.com/)
-- [Roman Perez](https://romanperez.fr/)
-- [Jules Deret](https://julesderet.fr/)
+
+## Collaborateurs cités
+
+- [Luc Pommeret](https://lucpommeret.com/) — coauteur de THIVLVC et réalisation du site
+- [Jules Deret](https://julesderet.fr/) — coauteur de THIVLVC
+- [Roman Perez](https://romanperez.fr/) — conception du site
 
 Dernière mise à jour : 25 août 2026.
