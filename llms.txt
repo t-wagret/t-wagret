@@ -1,0 +1,28 @@
+# Thibault Wagret
+
+> Site académique de Thibault Wagret, normalien, agrégé de lettres classiques et doctorant au laboratoire HiSoMA de l’ENS de Lyon.
+
+Thibault Wagret travaille sur la didactique du grec ancien, l’histoire de l’enseignement des langues anciennes et les méthodes actives. Sa thèse, commencée en 2023 sous la direction de Christophe Cusset et Charles Delattre, compare les méthodes grammaticales et actives en France et en Allemagne de 1871 à nos jours.
+
+## Pages principales
+
+- [Profil, recherche et enseignement](https://thibaultwagret.fr/)
+- [Cours de grec ancien, latin, philosophie et lettres](https://thibaultwagret.fr/cours.html)
+
+## Références institutionnelles et scientifiques
+
+- [Fiche HiSoMA](https://www.hisoma.mom.fr/presentation/annuaire-du-personnel/wagret-thibault)
+- [Profil ACL Anthology](https://aclanthology.org/people/thibault-wagret/unverified/)
+- [THIVLVC: Retrieval Augmented Dependency Parsing for Latin](https://aclanthology.org/2026.lt4hala-1.20/)
+- [DOI de la publication THIVLVC](https://doi.org/10.63317/2q8twojtotyb)
+
+## Sites associés
+
+- [Grec vivant](https://grecvivant.fr/)
+- [Latin vivant](https://latinvivant.fr/)
+- [Duae Linguae](https://duaelinguae.com/)
+- [Luc Pommeret](https://lucpommeret.com/)
+- [Roman Perez](https://romanperez.fr/)
+- [Jules Deret](https://julesderet.fr/)
+
+Dernière mise à jour : 25 août 2026.
