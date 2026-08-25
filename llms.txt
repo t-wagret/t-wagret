@@ -27,6 +27,7 @@ THIVLVC: Retrieval Augmented Dependency Parsing for Latin, par Luc Pommeret, Thi
 - [Grec vivant](https://grecvivant.fr/)
 - [Latin vivant](https://latinvivant.fr/)
 - [Duae Linguae](https://duaelinguae.com/)
+- [Greek Lemmatisation](https://greek.lemmatisation.com/) — interface pour lemmatiser des textes grecs, fondée sur un modèle entraîné et annoté par l’équipe du projet
 
 ## Collaborateurs cités
 
