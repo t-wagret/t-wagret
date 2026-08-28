@@ -574,6 +574,98 @@ main {
     color: var(--ink-soft);
 }
 
+.research-output-list {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.research-subsection {
+    display: grid;
+    grid-template-columns: 13rem minmax(0, 1fr);
+    gap: 2rem;
+    margin-top: 3.5rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--ink);
+}
+
+.research-subsection h3,
+.scholarly-records h3 {
+    font-size: 1.15rem;
+}
+
+.activity-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.activity-list li {
+    display: grid;
+    grid-template-columns: 8rem minmax(0, 1fr);
+    gap: 1.5rem;
+    padding: 1rem 0;
+    border-top: 1px solid var(--line);
+}
+
+.activity-list li:first-child {
+    padding-top: 0;
+    border-top: 0;
+}
+
+.activity-list time {
+    color: var(--wine);
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.activity-list strong,
+.activity-list span {
+    display: block;
+}
+
+.activity-list span {
+    margin-top: 0.2rem;
+    color: var(--ink-soft);
+    font-size: 0.93rem;
+}
+
+.scholarly-records {
+    display: grid;
+    grid-template-columns: 13rem minmax(0, 1fr);
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.scholarly-records ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 2.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.scholarly-records li {
+    border-top: 1px solid var(--line);
+}
+
+.scholarly-records a {
+    display: block;
+    padding: 0.9rem 0;
+    text-decoration: none;
+}
+
+.scholarly-records strong,
+.scholarly-records span {
+    display: block;
+}
+
+.scholarly-records span {
+    margin-top: 0.15rem;
+    color: var(--ink-soft);
+    font-size: 0.85rem;
+}
+
 .cards-grid,
 .skills-grid,
 .network-grid,
@@ -1044,6 +1136,18 @@ main {
     .source-list a {
         grid-template-columns: 1fr;
         gap: 0.35rem;
+    }
+
+    .research-subsection,
+    .scholarly-records,
+    .activity-list li,
+    .scholarly-records ul {
+        grid-template-columns: 1fr;
+    }
+
+    .research-subsection,
+    .scholarly-records {
+        gap: 0.75rem;
     }
 
     .cta-panel,

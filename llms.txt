@@ -2,7 +2,13 @@
 
 > Site académique de Thibault Wagret, normalien, agrégé de lettres classiques et doctorant au laboratoire HiSoMA de l’ENS de Lyon.
 
-Thibault Wagret travaille sur la didactique du grec ancien, l’histoire de l’enseignement des langues anciennes et les méthodes actives. Sa thèse, commencée en 2023 sous la direction de Christophe Cusset et Charles Delattre, compare les méthodes grammaticales et actives en France et en Allemagne de 1871 à nos jours.
+Thibault Wagret travaille sur la didactique du grec ancien, l’histoire des manuels et des programmes, les progymnasmata, le vocabulaire fréquentiel et les méthodes actives. Sa thèse, commencée en 2023 sous la direction de Christophe Cusset et Charles Delattre, compare les méthodes grammaticales et actives en France et en Allemagne de 1871 à nos jours.
+
+## Recherche et activités
+
+- Enseignement du latin et du grec ancien pour non-spécialistes à l’ENS de Lyon de 2023 à 2025.
+- Communications à Lyon en 2023, Lausanne en 2024, en séminaire international en 2026 et à l’atelier EvaLatin de LREC 2026.
+- Développement de [Sôtêr](https://greek.lemmatisation.com/) avec Luc Pommeret et Jules Deret : lemmatisation contextuelle du grec ancien, dictionnaires LSJ, Bailly et Pape, flexions et vocabulaire peu fréquent ; analyse locale dans le navigateur.
 
 ## Pages principales
 
@@ -14,11 +20,15 @@ Thibault Wagret travaille sur la didactique du grec ancien, l’histoire de l’
 
 THIVLVC: Retrieval Augmented Dependency Parsing for Latin, par Luc Pommeret, Thibault Wagret et Jules Deret, a paru en mai 2026 dans les actes de LT4HALA à LREC 2026, pages 219–225. Le système associe une analyse UDPipe, une recherche d’exemples structurellement proches dans CIRCSE et une révision guidée par les conventions Universal Dependencies. Il obtient le meilleur résultat sur le corpus poétique dans les quatre classements officiels d’EvaLatin 2026 et le meilleur LAS sans sous-types sur le corpus de prose.
 
+L’analyse en aveugle porte sur 300 divergences. Parmi 167 décisions unanimes et tranchées, 89 favorisent THIVLVC et 78 le gold standard, soit 53,3 % en faveur de THIVLVC. L’article précise les limites du système : base CIRCSE de 762 phrases, sélection informelle du modèle, non-déterminisme non mesuré, coût des appels API et accord interannotateurs κ = 0,493 sur la décision binaire.
+
 ## Références institutionnelles et scientifiques
 
 - [Fiche HiSoMA](https://www.hisoma.mom.fr/presentation/annuaire-du-personnel/wagret-thibault)
-- [Profil ACL Anthology](https://aclanthology.org/people/thibault-wagret/unverified/)
+- [Notice de la thèse en préparation · theses.fr s415126](https://theses.fr/s415126)
 - [THIVLVC: Retrieval Augmented Dependency Parsing for Latin](https://aclanthology.org/2026.lt4hala-1.20/)
+- [Dépôt HAL de THIVLVC · hal-05572961](https://hal.science/hal-05572961v2)
+- [Code source de THIVLVC](https://github.com/l-pommeret/THIVLVC)
 - [DOI de la publication THIVLVC](https://doi.org/10.63317/2q8twojtotyb)
 - [Évaluation et classements officiels d’EvaLatin 2026](https://aclanthology.org/2026.lt4hala-1.19/)
 
@@ -27,7 +37,7 @@ THIVLVC: Retrieval Augmented Dependency Parsing for Latin, par Luc Pommeret, Thi
 - [Grec vivant](https://grecvivant.fr/)
 - [Latin vivant](https://latinvivant.fr/)
 - [Duae Linguae](https://duaelinguae.com/)
-- [Greek Lemmatisation](https://greek.lemmatisation.com/) — interface pour lemmatiser des textes grecs, fondée sur un modèle entraîné et annoté par l’équipe du projet
+- [Sôtêr](https://greek.lemmatisation.com/) — lemmatiseur contextuel de grec ancien développé avec Luc Pommeret et Jules Deret
 - [The Greek Library](https://www.thegreeklibrary.org/) — bibliothèque numérique pour rechercher et lire 5 394 éditions de 1 828 auteurs du corpus littéraire grec, avec références CTS stables et données TEI XML
 
 ## Collaborateurs cités
@@ -36,4 +46,4 @@ THIVLVC: Retrieval Augmented Dependency Parsing for Latin, par Luc Pommeret, Thi
 - [Jules Deret](https://julesderet.fr/) — coauteur de THIVLVC
 - [Roman Perez](https://romanperez.fr/) — conception du site
 
-Dernière mise à jour : 25 août 2026.
+Dernière mise à jour : 28 août 2026.

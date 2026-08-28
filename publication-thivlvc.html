@@ -68,10 +68,7 @@
           "@id": "https://thibaultwagret.fr/#person",
           "name": "Thibault Wagret",
           "url": "https://thibaultwagret.fr/",
-          "sameAs": [
-            "https://www.hisoma.mom.fr/presentation/annuaire-du-personnel/wagret-thibault",
-            "https://aclanthology.org/people/thibault-wagret/unverified/"
-          ]
+          "sameAs": ["https://www.hisoma.mom.fr/presentation/annuaire-du-personnel/wagret-thibault"]
         },
         {
           "@type": "ImageObject",
@@ -89,7 +86,7 @@
           "description": "Résumé en français, méthode, résultats et références de la publication THIVLVC.",
           "inLanguage": "fr-FR",
           "dateCreated": "2026-08-25",
-          "dateModified": "2026-08-25",
+          "dateModified": "2026-08-28",
           "isPartOf": { "@id": "https://thibaultwagret.fr/#website" },
           "breadcrumb": { "@id": "https://thibaultwagret.fr/publication-thivlvc.html#breadcrumb" },
           "primaryImageOfPage": { "@id": "https://thibaultwagret.fr/publication-thivlvc.html#primaryimage" },
@@ -103,7 +100,8 @@
           "url": "https://thibaultwagret.fr/publication-thivlvc.html",
           "sameAs": [
             "https://aclanthology.org/2026.lt4hala-1.20/",
-            "https://doi.org/10.63317/2q8twojtotyb"
+            "https://doi.org/10.63317/2q8twojtotyb",
+            "https://hal.science/hal-05572961v2"
           ],
           "mainEntityOfPage": { "@id": "https://thibaultwagret.fr/publication-thivlvc.html#webpage" },
           "image": { "@id": "https://thibaultwagret.fr/publication-thivlvc.html#primaryimage" },
@@ -112,7 +110,7 @@
           "pageStart": "219",
           "pageEnd": "225",
           "pagination": "219–225",
-          "identifier": ["ACL:2026.lt4hala-1.20", "DOI:10.63317/2q8twojtotyb"],
+          "identifier": ["ACL:2026.lt4hala-1.20", "DOI:10.63317/2q8twojtotyb", "HAL:hal-05572961"],
           "description": "Synthèse en français : THIVLVC est un système en deux étapes pour l’analyse syntaxique du latin. Il associe une analyse UDPipe, la recherche d’exemples structurellement proches dans le treebank CIRCSE et un grand modèle de langue guidé par les conventions Universal Dependencies.",
           "keywords": ["Latin", "dependency parsing", "Retrieval-Augmented Generation", "RAG", "Universal Dependencies", "EvaLatin"],
           "about": ["Traitement automatique du latin", "Analyse syntaxique", "Modèles de langue", "Humanités numériques"],
@@ -219,7 +217,7 @@
                 <ol class="method-grid numbered-grid">
                     <li class="method-card"><span class="card-meta">Étape 1</span><h3>Analyse initiale</h3><p>UDPipe fournit une première analyse en dépendances pour chaque phrase latine.</p></li>
                     <li class="method-card"><span class="card-meta">Étape 2</span><h3>Exemples proches</h3><p>Le système interroge CIRCSE selon la longueur des phrases et la similarité des n-grammes de parties du discours.</p></li>
-                    <li class="method-card"><span class="card-meta">Étape 3</span><h3>Révision par LLM</h3><p>Un grand modèle de langue affine l’analyse grâce aux exemples retrouvés et aux règles Universal Dependencies.</p></li>
+                    <li class="method-card"><span class="card-meta">Étape 3</span><h3>Révision par LLM</h3><p>Gemini 3 Flash affine l’analyse grâce aux exemples retrouvés et aux règles Universal Dependencies.</p></li>
                 </ol>
             </section>
 
@@ -233,12 +231,13 @@
                     <tbody>
                         <tr><td><strong>+17</strong> points CLAS</td><td>Poésie · Sénèque</td><td>Gain par rapport à la baseline UDPipe.</td></tr>
                         <tr><td><strong>+1,5</strong> point CLAS</td><td>Prose · Thomas d’Aquin</td><td>Gain par rapport à la baseline UDPipe.</td></tr>
-                        <tr><td><strong>53,3 %</strong></td><td>300 divergences analysées en aveugle</td><td>Part des décisions unanimes favorisant THIVLVC.</td></tr>
+                        <tr><td><strong>89 / 167</strong> · 53,3 %</td><td>167 décisions unanimes et tranchées, parmi 300 divergences</td><td>Cas dans lesquels les deux annotateurs préfèrent THIVLVC au gold standard.</td></tr>
                     </tbody>
                 </table>
                 <div class="evidence-panel">
                     <h3>Classements de la tâche partagée</h3>
                     <p>Selon l’article d’évaluation des organisateurs, la configuration THIVLVC avec RAG arrive en tête sur le corpus poétique pour les quatre classements publiés : CLAS et LAS, avec ou sans sous-types. Sur le corpus de prose, elle obtient le meilleur LAS sans sous-types avec un score F1 de 87,93 ; les autres classements de prose sont menés par UppsalaNLP.</p>
+                    <p>Dans l’analyse en aveugle, 173 des 300 divergences aboutissent à un accord unanime ; 167 de ces accords tranchent entre THIVLVC et le gold standard, avec 89 décisions pour THIVLVC et 78 pour le gold. L’article signale également les limites du dispositif : base CIRCSE de 762 phrases, choix du modèle par comparaison informelle, non-déterminisme non mesuré, coût d’un appel API par phrase et accord interannotateurs qualifié de modéré (κ = 0,493 sur la décision binaire).</p>
                     <p><a href="https://aclanthology.org/2026.lt4hala-1.19/" target="_blank" rel="noopener noreferrer">Consulter l’article d’évaluation officiel d’EvaLatin 2026</a>.</p>
                 </div>
             </section>
@@ -265,6 +264,8 @@
                 <ul class="source-list">
                     <li><a href="https://aclanthology.org/2026.lt4hala-1.20/" target="_blank" rel="noopener noreferrer"><strong>Article THIVLVC</strong><span>Résumé, métadonnées, PDF et formats de citation.</span></a></li>
                     <li><a href="https://doi.org/10.63317/2q8twojtotyb" target="_blank" rel="noopener noreferrer"><strong>DOI de THIVLVC</strong><span>Identifiant pérenne de la publication.</span></a></li>
+                    <li><a href="https://hal.science/hal-05572961v2" target="_blank" rel="noopener noreferrer"><strong>Dépôt HAL · hal-05572961</strong><span>Version déposée en archive ouverte.</span></a></li>
+                    <li><a href="https://github.com/l-pommeret/THIVLVC" target="_blank" rel="noopener noreferrer"><strong>Code source de THIVLVC</strong><span>Dépôt GitHub cité dans l’article.</span></a></li>
                     <li><a href="https://aclanthology.org/2026.lt4hala-1.19/" target="_blank" rel="noopener noreferrer"><strong>Overview of the Dependency Parsing Task</strong><span>Méthodologie d’évaluation et classements officiels d’EvaLatin 2026.</span></a></li>
                 </ul>
             </section>
@@ -273,7 +274,7 @@
 
     <footer class="site-footer">
         <div class="page-shell footer-grid">
-            <div><p>© 2026 Thibault Wagret · Mis à jour le <time datetime="2026-08-25">25 août 2026</time></p><p>Résumé fondé sur les publications ACL Anthology citées dans la page.</p></div>
+            <div><p>© 2026 Thibault Wagret · Mis à jour le <time datetime="2026-08-28">28 août 2026</time></p><p>Résumé fondé sur les publications ACL Anthology citées dans la page.</p></div>
             <nav class="footer-links" aria-label="Liens de pied de page"><a href="/">Accueil</a><a href="cours.html">Cours</a><a href="#citation">Citation</a><a href="#sources">Sources</a></nav>
         </div>
     </footer>

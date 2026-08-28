@@ -73,12 +73,13 @@
           "description": "Site académique de Thibault Wagret, doctorant au laboratoire HiSoMA et agrégé de lettres classiques.",
           "inLanguage": "fr-FR",
           "dateCreated": "2025-12-15",
-          "dateModified": "2026-08-25",
+          "dateModified": "2026-08-28",
           "isPartOf": { "@id": "https://thibaultwagret.fr/#website" },
           "primaryImageOfPage": { "@id": "https://thibaultwagret.fr/#portrait" },
           "mainEntity": { "@id": "https://thibaultwagret.fr/#person" },
           "mentions": [
             { "@id": "https://doi.org/10.63317/2q8twojtotyb" },
+            { "@id": "https://theses.fr/s415126" },
             { "@id": "https://thibaultwagret.fr/#ressources-et-personnes" }
           ]
         },
@@ -106,7 +107,7 @@
           "email": "mailto:thibault.wagret@ens-lyon.fr",
           "image": { "@id": "https://thibaultwagret.fr/#portrait" },
           "jobTitle": "Doctorant en lettres classiques",
-          "description": "Agrégé de lettres classiques et doctorant au laboratoire HiSoMA. Ses recherches portent sur la didactique du grec ancien et l’histoire de l’enseignement des langues anciennes.",
+          "description": "Agrégé de lettres classiques et doctorant au laboratoire HiSoMA. Ses recherches portent sur la didactique du grec ancien en France et en Allemagne depuis 1871, l’histoire des manuels et des programmes, la progression lexicale et les humanités numériques.",
           "affiliation": [
             { "@id": "https://www.hisoma.mom.fr/#organization" },
             { "@id": "https://www.ens-lyon.fr/#organization" }
@@ -123,16 +124,32 @@
             "Latin",
             "Didactique des langues anciennes",
             "Méthodes actives",
+            "Histoire des manuels et des programmes",
+            "Progymnasmata",
+            "Vocabulaire fréquentiel en grec ancien",
+            "Lemmatisation automatique du grec",
+            "Universal Dependencies",
+            "Néolatin",
             "Philologie classique",
             "Philosophie antique",
             "Traitement automatique du latin"
           ],
           "knowsLanguage": ["Français", "Allemand", "Anglais", "Grec ancien", "Latin"],
-          "sameAs": [
-            "https://www.hisoma.mom.fr/presentation/annuaire-du-personnel/wagret-thibault",
-            "https://aclanthology.org/people/thibault-wagret/unverified/"
-          ],
+          "sameAs": ["https://www.hisoma.mom.fr/presentation/annuaire-du-personnel/wagret-thibault"],
           "mainEntityOfPage": { "@id": "https://thibaultwagret.fr/#webpage" }
+        },
+        {
+          "@type": "CreativeWork",
+          "@id": "https://theses.fr/s415126",
+          "url": "https://theses.fr/s415126",
+          "name": "Le grec ancien, langue ancienne ou langue seconde ? Méthodes grammaticales et méthodes actives en France et en Allemagne, de 1871 à nos jours",
+          "alternateName": "Ancient Greek, ancient or second language? Grammatical and active methods in France and Germany from 1871 to the present day",
+          "description": "Thèse en préparation en langues et littératures anciennes à l’ENS de Lyon, au laboratoire HiSoMA.",
+          "inLanguage": "fr",
+          "dateCreated": "2023-10-01",
+          "creativeWorkStatus": "En cours",
+          "author": { "@id": "https://thibaultwagret.fr/#person" },
+          "about": ["Grec ancien", "Méthodes actives", "Grec vivant", "Latin vivant", "Athenaze"]
         },
         {
           "@type": "ScholarlyArticle",
@@ -142,14 +159,15 @@
           "url": "https://thibaultwagret.fr/publication-thivlvc.html",
           "sameAs": [
             "https://aclanthology.org/2026.lt4hala-1.20/",
-            "https://doi.org/10.63317/2q8twojtotyb"
+            "https://doi.org/10.63317/2q8twojtotyb",
+            "https://hal.science/hal-05572961v2"
           ],
           "datePublished": "2026-05",
           "inLanguage": "en",
           "pageStart": "219",
           "pageEnd": "225",
           "pagination": "219–225",
-          "identifier": ["ACL:2026.lt4hala-1.20", "DOI:10.63317/2q8twojtotyb"],
+          "identifier": ["ACL:2026.lt4hala-1.20", "DOI:10.63317/2q8twojtotyb", "HAL:hal-05572961"],
           "description": "Synthèse en français : THIVLVC combine une analyse UDPipe, la recherche d’exemples syntaxiquement proches dans le treebank CIRCSE et un grand modèle de langue guidé par les règles Universal Dependencies pour analyser le latin.",
           "author": [
             { "@type": "Person", "name": "Luc Pommeret", "url": "https://lucpommeret.com/" },
@@ -175,7 +193,7 @@
             { "@type": "ListItem", "position": 1, "item": { "@type": "WebSite", "name": "Grec vivant", "url": "https://grecvivant.fr/" } },
             { "@type": "ListItem", "position": 2, "item": { "@type": "WebSite", "name": "Latin vivant", "url": "https://latinvivant.fr/" } },
             { "@type": "ListItem", "position": 3, "item": { "@type": "WebSite", "name": "Duae Linguae", "url": "https://duaelinguae.com/" } },
-            { "@type": "ListItem", "position": 4, "item": { "@type": "WebApplication", "name": "Greek Lemmatisation", "url": "https://greek.lemmatisation.com/", "applicationCategory": "EducationalApplication", "operatingSystem": "Web", "description": "Interface de lemmatisation de textes grecs fondée sur un modèle entraîné et annoté par l’équipe du projet." } },
+            { "@type": "ListItem", "position": 4, "item": { "@type": "WebApplication", "name": "Sôtêr", "alternateName": "Greek Lemmatisation", "url": "https://greek.lemmatisation.com/", "applicationCategory": "EducationalApplication", "operatingSystem": "Web", "description": "Lemmatiseur contextuel de grec ancien exécuté localement dans le navigateur, avec consultation des dictionnaires LSJ, Bailly et Pape, affichage des flexions et repérage du vocabulaire peu fréquent." } },
             { "@type": "ListItem", "position": 5, "item": { "@type": "WebSite", "name": "The Greek Library", "url": "https://www.thegreeklibrary.org/", "inLanguage": "en", "description": "Bibliothèque numérique pour rechercher et lire 5 394 éditions de 1 828 auteurs du corpus littéraire grec, avec références CTS stables." } },
             { "@type": "ListItem", "position": 6, "item": { "@type": "Person", "name": "Luc Pommeret", "url": "https://lucpommeret.com/" } },
             { "@type": "ListItem", "position": 7, "item": { "@type": "Person", "name": "Roman Perez", "url": "https://romanperez.fr/" } },
@@ -245,14 +263,15 @@
                 <div class="prose">
                     <p>Agrégé de lettres classiques en 2022 et normalien de l’ENS de Lyon, je prépare depuis 2023 un doctorat au laboratoire HiSoMA.</p>
                     <p>Ma thèse, dirigée par Christophe Cusset et Charles Delattre, s’intitule <cite>« Le grec ancien, langue ancienne ou langue seconde ? Méthodes grammaticales et méthodes actives en France et en Allemagne, de 1871 à nos jours »</cite>.</p>
-                    <p class="source-note">Statut, sujet, direction et première inscription confirmés par la <a href="https://www.hisoma.mom.fr/presentation/annuaire-du-personnel/wagret-thibault" target="_blank" rel="noopener noreferrer">fiche institutionnelle HiSoMA</a>.</p>
-                    <p>Mes travaux examinent la manière dont le grec ancien a été appris et enseigné, en comparant les traditions grammaticales et les approches actives qui mobilisent lecture extensive, oralisation et pratique de la langue.</p>
+                    <p>J’étudie la manière dont le grec ancien a été appris et enseigné en France et en Allemagne depuis 1871. L’enquête compare les méthodes fondées sur l’explication grammaticale aux démarches actives qui recourent à la lecture extensive, à l’oralisation et à la pratique de la langue.</p>
+                    <p>Ce travail met en relation l’histoire des manuels, l’évolution des programmes et les finalités successivement données aux études classiques. Il examine aussi les <i lang="la">progymnasmata</i>, la progression lexicale et la place des outils numériques dans la lecture des textes anciens.</p>
                 </div>
                 <aside class="fact-card" aria-label="Informations clés">
                     <dl>
                         <div><dt>Statut</dt><dd>Doctorant en lettres classiques</dd></div>
                         <div><dt>Affiliation</dt><dd>HiSoMA · ENS de Lyon</dd></div>
-                        <div><dt>Axes</dt><dd>Grec ancien, didactique, méthodes actives</dd></div>
+                        <div><dt>Première inscription</dt><dd>1er octobre 2023</dd></div>
+                        <div><dt>Axes</dt><dd>Didactique, histoire des manuels, progression lexicale</dd></div>
                         <div><dt>Direction</dt><dd>Christophe Cusset &amp; Charles Delattre</dd></div>
                     </dl>
                 </aside>
@@ -311,15 +330,44 @@
             <div class="research-grid">
                 <ul class="topic-list">
                     <li><strong>Didactique du grec ancien</strong><br>Comparaison des méthodes grammaticales et actives en France et en Allemagne, de 1871 à aujourd’hui.</li>
-                    <li><strong>Histoire de l’enseignement</strong><br>Évolution des pratiques, des manuels et des finalités attribuées aux langues anciennes.</li>
-                    <li><strong>Philologie et philosophie antiques</strong><br>Stoïcisme, aristotélisme et lecture des textes classiques.</li>
+                    <li><strong>Histoire de l’enseignement</strong><br>Manuels, programmes, <i lang="la">progymnasmata</i> et finalités attribuées aux langues anciennes.</li>
+                    <li><strong>Grec et latin vivants</strong><br>Lecture extensive, oralisation et pratique orale des langues anciennes.</li>
+                    <li><strong>Progression lexicale</strong><br>Vocabulaire fréquentiel et organisation de son apprentissage en grec ancien.</li>
+                    <li><strong>Humanités numériques</strong><br>Lemmatisation automatique du grec, analyse syntaxique en dépendances et Universal Dependencies.</li>
+                    <li><strong>Néolatin, philologie et philosophie antiques</strong><br>Stoïcisme, aristotélisme et histoire des textes.</li>
                 </ul>
-                <article class="publication">
-                    <p class="publication-label">Publication · mai 2026</p>
-                    <h3><a href="publication-thivlvc.html"><cite>THIVLVC: Retrieval Augmented Dependency Parsing for Latin</cite></a></h3>
-                    <p><a href="https://lucpommeret.com/" target="_blank" rel="noopener noreferrer">Luc Pommeret</a>, Thibault Wagret et <a href="https://julesderet.fr/" target="_blank" rel="noopener noreferrer">Jules Deret</a>. LT4HALA / LREC 2026, pages 219–225. THIVLVC obtient le meilleur résultat sur le corpus poétique dans les quatre classements officiels et le meilleur LAS sans sous-types sur le corpus de prose. <a href="publication-thivlvc.html">Résumé, méthode et résultats</a>.</p>
-                </article>
+                <div class="research-output-list">
+                    <article class="publication">
+                        <p class="publication-label">Projet numérique · grec ancien</p>
+                        <h3><a href="https://greek.lemmatisation.com/" target="_blank" rel="noopener noreferrer">Sôtêr, lemmatiseur contextuel de grec ancien</a></h3>
+                        <p>L’outil analyse les formes dans leur contexte, donne accès aux dictionnaires LSJ, Bailly et Pape, affiche les flexions et signale le vocabulaire peu fréquent. L’analyse s’exécute localement dans le navigateur, sans transmettre le texte. Projet développé avec <a href="https://lucpommeret.com/" target="_blank" rel="noopener noreferrer">Luc Pommeret</a> et <a href="https://julesderet.fr/" target="_blank" rel="noopener noreferrer">Jules Deret</a>.</p>
+                    </article>
+                    <article class="publication">
+                        <p class="publication-label">Publication · mai 2026</p>
+                        <h3><a href="publication-thivlvc.html"><cite>THIVLVC: Retrieval Augmented Dependency Parsing for Latin</cite></a></h3>
+                        <p><a href="https://lucpommeret.com/" target="_blank" rel="noopener noreferrer">Luc Pommeret</a>, Thibault Wagret et <a href="https://julesderet.fr/" target="_blank" rel="noopener noreferrer">Jules Deret</a>. LT4HALA / LREC 2026, pages 219–225. THIVLVC obtient le meilleur résultat sur le corpus poétique dans les quatre classements officiels et le meilleur LAS sans sous-types sur le corpus de prose. <a href="publication-thivlvc.html">Résumé, méthode et résultats</a> · <a href="https://hal.science/hal-05572961v2" target="_blank" rel="noopener noreferrer">dépôt HAL</a>.</p>
+                    </article>
+                </div>
             </div>
+            <div class="research-subsection">
+                <h3>Communications scientifiques</h3>
+                <ol class="activity-list">
+                    <li><time datetime="2026-05-11">11 mai 2026</time><div><strong>Atelier EvaLatin, LREC 2026</strong><span>Présentation à Palma de Majorque.</span></div></li>
+                    <li><time datetime="2026-02-18">18 février 2026</time><div><strong>Le vocabulaire fréquentiel et son enseignement</strong><span>Séminaire international en ligne.</span></div></li>
+                    <li><time datetime="2024-04-11">11 avril 2024</time><div><strong>Faire vivre le grec ancien</strong><span>« Les méthodes actives au service de l’apprentissage des langues anciennes », colloque international, Lausanne.</span></div></li>
+                    <li><time datetime="2023-10-06">6 octobre 2023</time><div><strong>Adapter, aménager, guider la lecture</strong><span>Modération d’une table ronde lors d’un colloque international à Lyon.</span></div></li>
+                </ol>
+            </div>
+            <nav class="scholarly-records" aria-label="Notices et dépôts scientifiques">
+                <h3>Notices et dépôts</h3>
+                <ul>
+                    <li><a href="https://www.hisoma.mom.fr/presentation/annuaire-du-personnel/wagret-thibault" target="_blank" rel="me noopener noreferrer"><strong>HiSoMA</strong><span>Fiche institutionnelle et activités scientifiques</span></a></li>
+                    <li><a href="https://theses.fr/s415126" target="_blank" rel="noopener noreferrer"><strong>theses.fr · s415126</strong><span>Notice de la thèse en préparation</span></a></li>
+                    <li><a href="https://hal.science/hal-05572961v2" target="_blank" rel="noopener noreferrer"><strong>HAL · hal-05572961</strong><span>Dépôt en archive ouverte de THIVLVC</span></a></li>
+                    <li><a href="https://aclanthology.org/2026.lt4hala-1.20/" target="_blank" rel="noopener noreferrer"><strong>ACL Anthology</strong><span>Notice, PDF et BibTeX de THIVLVC</span></a></li>
+                    <li><a href="https://doi.org/10.63317/2q8twojtotyb" target="_blank" rel="noopener noreferrer"><strong>DOI</strong><span>10.63317/2q8twojtotyb</span></a></li>
+                </ul>
+            </nav>
         </section>
 
         <section id="teaching" class="content-section">
@@ -331,12 +379,11 @@
                 </div>
             </div>
             <div class="cards-grid">
+                <article class="service-card"><span class="card-meta">2023 — 2025 · ENS de Lyon</span><h3>Latin et grec ancien pour non-spécialistes</h3><p>Enseignements destinés aux étudiants non spécialistes à l’ENS de Lyon.</p></article>
                 <article class="service-card"><span class="card-meta">2021 — 2022 · Lyon</span><h3>Latin au lycée</h3><p>Chargé de cours en classe de seconde au lycée La Xavière.</p></article>
-                <article class="service-card"><span class="card-meta">2019 — 2020 · Lyon</span><h3>Grec vivant</h3><p>Cours débutant et confirmé avec <cite>Athenaze</cite> à l’ENS de Lyon et pour l’Association Guillaume Budé.</p></article>
+                <article class="service-card"><span class="card-meta">2019 — 2020 · Lyon</span><h3>Latin et grec ancien</h3><p>Cours de niveaux débutant et confirmé à l’ENS de Lyon et pour l’Association Guillaume Budé.</p></article>
                 <article class="service-card"><span class="card-meta">Juillet 2020 · Amnéville</span><h3>Septimana Latina</h3><p>Lecture intégrale du <cite>Criton</cite> de Platon dans le cadre d’une semaine immersive.</p></article>
-                <article class="service-card"><span class="card-meta">2018 — 2019 · Frascati</span><h3>Vivarium Novum</h3><p>Cours de grec ancien, du niveau débutant à intermédiaire, en immersion totale.</p></article>
-                <article class="service-card"><span class="card-meta">6 octobre 2023 · Lyon</span><h3>Colloque international</h3><p>Modération de la table ronde « Adapter, aménager, guider la lecture ».</p></article>
-                <article class="service-card"><span class="card-meta">18 février 2026 · En ligne</span><h3>Séminaire international</h3><p>Intervention sur le vocabulaire fréquentiel et son enseignement.</p></article>
+                <article class="service-card"><span class="card-meta">2018 — 2019 · Frascati</span><h3>Latin et grec ancien en immersion</h3><p>Enseignement à l’Accademia Vivarium Novum.</p></article>
             </div>
         </section>
 
@@ -378,7 +425,7 @@
                 <a class="network-card" href="https://grecvivant.fr/" target="_blank" rel="noopener noreferrer"><small>Ressource</small><strong>Grec vivant</strong><span>grecvivant.fr ↗</span></a>
                 <a class="network-card" href="https://latinvivant.fr/" target="_blank" rel="noopener noreferrer"><small>Ressource</small><strong>Latin vivant</strong><span>latinvivant.fr ↗</span></a>
                 <a class="network-card" href="https://duaelinguae.com/" target="_blank" rel="noopener noreferrer"><small>Ressource pédagogique</small><strong>Duae Linguae</strong><span>duaelinguae.com ↗</span></a>
-                <a class="network-card" href="https://greek.lemmatisation.com/" target="_blank" rel="noopener noreferrer"><small>Outil · grec ancien</small><strong>Greek Lemmatisation</strong><span>Interface pour lemmatiser des textes grecs ; modèle entraîné et annoté par l’équipe du projet · greek.lemmatisation.com ↗</span></a>
+                <a class="network-card" href="https://greek.lemmatisation.com/" target="_blank" rel="noopener noreferrer"><small>Projet numérique · grec ancien</small><strong>Sôtêr</strong><span>Lemmatisation contextuelle, dictionnaires LSJ, Bailly et Pape, flexions et vocabulaire fréquentiel · greek.lemmatisation.com ↗</span></a>
                 <a class="network-card" href="https://www.thegreeklibrary.org/" target="_blank" rel="noopener noreferrer"><small>Projet · corpus littéraire grec</small><strong>The Greek Library</strong><span>Rechercher et lire 5 394 éditions de 1 828 auteurs, avec références CTS stables · thegreeklibrary.org ↗</span></a>
                 <a class="network-card" href="https://lucpommeret.com/" target="_blank" rel="noopener noreferrer"><small>Coauteur · THIVLVC</small><strong>Luc Pommeret</strong><span>lucpommeret.com ↗</span></a>
                 <a class="network-card" href="https://romanperez.fr/" target="_blank" rel="noopener noreferrer"><small>Conception du site</small><strong>Roman Perez</strong><span>romanperez.fr ↗</span></a>
@@ -420,7 +467,7 @@
 
     <footer class="site-footer">
         <div class="page-shell footer-grid">
-            <div><p>© 2026 Thibault Wagret · Mis à jour le <time datetime="2026-08-25">25 août 2026</time></p><p>Site conçu par <a href="https://romanperez.fr/" target="_blank" rel="noopener noreferrer">Roman Perez</a> et réalisé par <a href="https://lucpommeret.com/" target="_blank" rel="noopener noreferrer">Luc Pommeret</a>.</p></div>
+            <div><p>© 2026 Thibault Wagret · Mis à jour le <time datetime="2026-08-28">28 août 2026</time></p><p>Site conçu par <a href="https://romanperez.fr/" target="_blank" rel="noopener noreferrer">Roman Perez</a> et réalisé par <a href="https://lucpommeret.com/" target="_blank" rel="noopener noreferrer">Luc Pommeret</a>.</p></div>
             <nav class="footer-links" aria-label="Liens de pied de page"><a href="cours.html">Cours</a><a href="publication-thivlvc.html">Publication</a><a href="#network">Réseau</a><a href="#contact">Contact</a></nav>
         </div>
     </footer>
